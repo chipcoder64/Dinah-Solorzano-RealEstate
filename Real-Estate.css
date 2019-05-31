@@ -9,7 +9,7 @@ html {
 } 
 
 body {
-    background: url("Los-Angeles-skyline.jpg") no-repeat center top fixed;
+    background: url("Los-Angeles-skyline.jpg") no-repeat center cover fixed;
     background-size: cover;
 }
 

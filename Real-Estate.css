@@ -24,3 +24,65 @@ h1 {
 h6{
     text-align: center;
 }
+
+/*  Side Section  */
+.intro-pic{
+    margin-left: 20%;
+}
+
+.phone-link {
+    margin: 10px 10px 15px 10px;
+    font-size: 20px;
+    white-space: nowrap;
+}
+
+.side-section{
+    background-color: rgb(236, 249, 252, 0.8);
+    display: inline-block;
+    margin-left: 3%;
+}
+
+.name, .license-num{
+    margin-left: 60px;
+    font-size: 1.3em;
+}
+
+.phone-icon{
+    height: 20px;
+    margin: 0 20px 0 80px;
+}
+
+
+
+/*   Media Queries Below  */
+@media (max-width: 1024px){
+    body{
+        background-size: 2700px;
+    }
+
+
+}
+
+@media (max-width: 812px){
+    body{
+        background-size: 1900px;
+    }
+
+
+}
+
+@media (max-width: 640px){
+    body{
+        background-size: 1500px;
+    }
+
+
+}
+
+@media (max-width: 400px){
+    body{
+        background-size: 1500px;
+    }
+
+
+}

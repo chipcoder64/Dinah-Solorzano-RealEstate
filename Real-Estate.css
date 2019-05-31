@@ -4,13 +4,18 @@
 	box-sizing: border-box;
 }
 
+html {
+    height: 100%;
+} 
+
 body {
     background: url("Los-Angeles-skyline.jpg") no-repeat center center fixed;
+    background-size: cover;
 }
 
 .layer{
     background: rgba(201, 244, 252, 0.8);
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;

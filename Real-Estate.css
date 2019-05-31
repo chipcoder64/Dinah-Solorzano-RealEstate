@@ -1,0 +1,26 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+    background: url("Los-Angeles-skyline.jpg") no-repeat center center fixed;
+}
+
+.layer{
+    background: rgba(201, 244, 252, 0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+h1 {
+    margin-top: 20px;
+    text-align: center;
+}
+h6{
+    text-align: center;
+}

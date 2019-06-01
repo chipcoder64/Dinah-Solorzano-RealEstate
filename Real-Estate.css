@@ -3,7 +3,11 @@
 	padding: 0;
 	box-sizing: border-box;
 }
-
+/*  navbar  */
+#navbar{
+    width: 100%;
+}
+/*  navbar  */
 
 
 /*   Header Section  */
@@ -21,8 +25,8 @@ h6{
 
 /* background image and transparent layer */
 body {
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     background: url("Los-Angeles-skyline.jpg") no-repeat top center fixed;
 }
 
@@ -31,8 +35,8 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     z-index: -1;
 }
 /* end background image and layer */
@@ -66,7 +70,7 @@ body {
 .side-section{
     background-color: rgb(236, 249, 252, 0.8);
     display: inline-block;
-    margin-left: 3%;
+    margin: 0 3% 0 3%;
 }
 
 .name, .license-num{
@@ -85,6 +89,7 @@ body {
 
 .email{
     margin-bottom: 10px;
+    text-align: center;
 }
 
 .email a{
@@ -116,33 +121,9 @@ body {
 
 
 /*   Media Queries Below  */
-@media (max-width: 1024px){
-    body{
-        background-size: 2700px;
-    }
-
-
-}
-
-@media (max-width: 812px){
-    body{
-        background-size: 1900px;
-    }
-
-
-}
-
-@media (max-width: 640px){
-    body{
-        background-size: 1500px;
-    }
-
-
-}
-
-@media (max-width: 400px){
-    body{
-        background-size: 1500px;
+@media (max-width: 414px){
+    .main-sec-wrap{
+        flex-direction: column;
     }
 
 

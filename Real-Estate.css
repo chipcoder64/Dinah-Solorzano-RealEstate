@@ -3,11 +3,6 @@
 	padding: 0;
 	box-sizing: border-box;
 }
-/*  navbar  */
-#navbar{
-    width: 100%;
-}
-/*  navbar  */
 
 
 /*   Header Section  */
@@ -121,6 +116,7 @@ body {
 
 
 /*   Media Queries Below  */
+
 @media (max-width: 414px){
     .main-sec-wrap{
         flex-direction: column;

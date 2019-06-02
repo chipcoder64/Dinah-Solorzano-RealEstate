@@ -39,8 +39,8 @@ body {
 
 
 
-/*    Main Section Wrap   */
-.main-sec-wrap{
+/*    Bio Section Wrap   */
+.bio-sec-wrap{
     display: flex;
     flex-direction: row;
 }
@@ -75,11 +75,12 @@ body {
 
 .phone-icon{
     height: 15px;
-    margin: 8px 20px 0 70px;
+    margin: 0 10px 5px 0;
 }
 
 .phone{
     font-size: 1.5em;
+    text-align: center;
 }
 
 .email{
@@ -114,13 +115,130 @@ body {
 
 
 
+/* Main Section */
+.main-sec-wrap{
+    background-color: rgb(236, 249, 252, 0.8);
+    display: inline-block;
+    margin: 3%;
+    width: 90%;
+}
+.address-price-wrap{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.house-number{
+    font-size: 2em;
+    margin-top: 3%;
+}
+
+.city{
+    font-size: 1em !important;
+}
+
+.price{
+    font-size: 2em;
+    margin-top: 3%;
+}
+
+.description{
+    font-size: 2em;
+    margin-left: 3%;
+    font-weight: 700;
+}
+
+.description-para{
+    margin: 4%;
+    font-size: 1.5em;
+}
+
+.home-details{
+    font-size: 1.5em;
+    margin: 3%;
+    font-weight: 700;
+}
+
+.description-grid{
+    margin: 3%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50px 50px 50px;
+    justify-items: center; 
+}
+
+.googlemap{
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+}
+
+.nearby-schools{
+    margin: 3% 0 0 3%;
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.school-name, .school-grades{
+    font-size: 1.3em;
+    font-weight: 500;
+}
+
+.schools-wrap{
+    margin: 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.carousel-wrap{
+    width: 70%;
+    margin: 3% auto 3% auto;
+}
+/* Main Section */
+
+
+
+
+/*  Footer Section */
+.assoc-realtor-img{
+    display: flex;
+    justify-content: center;
+}
+
+.assoc-realtor-img > img{
+    height: 40px;
+    margin: 20px;
+}
+
+.legal{
+    text-align: center;
+}
+/*  Footer Section */
+
+
+
 
 /*   Media Queries Below  */
 
 @media (max-width: 414px){
-    .main-sec-wrap{
+    .bio-sec-wrap{
         flex-direction: column;
     }
 
+    .description-grid{
+        grid-template-columns: 2fr;
+        grid-template-rows: auto;
+    }
+
+    .schools-wrap{
+        flex-direction: column;
+    }
+
+    .schools-wrap > div{
+        margin: 3%;
+    }
+
+    .nearby-schools{
+        text-align: center;
+    }
 
 }

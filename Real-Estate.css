@@ -137,6 +137,17 @@ body {
             justify-content: space-evenly;
 }
 
+.home-for-sale{
+    font-weight: 700;
+    border-bottom: 2px solid gray;
+    width: 40%;
+    margin: 3% auto 3% auto;
+    text-align: center;
+    font-size: 2em;
+    white-space: nowrap;
+    padding-bottom: 2%;
+}
+
 .house-number{
     font-size: 2em;
     margin-top: 3%;
@@ -148,7 +159,7 @@ body {
 
 .price{
     font-size: 2em;
-    margin-top: 3%;
+    margin-top: .5%;
 }
 
 .description{

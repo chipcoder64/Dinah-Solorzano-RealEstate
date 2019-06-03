@@ -1,7 +1,8 @@
 *{
 	margin: 0;
 	padding: 0;
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 }
 
 
@@ -41,8 +42,13 @@ body {
 
 /*    Bio Section Wrap   */
 .bio-sec-wrap{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
 }
 
 /*    Main Section Wrap End   */
@@ -123,8 +129,12 @@ body {
     width: 90%;
 }
 .address-price-wrap{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-evenly;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
 }
 
 .house-number{
@@ -160,14 +170,64 @@ body {
 
 .description-grid{
     margin: 3%;
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-rows: 50px 50px 50px;
     grid-template-rows: 50px 50px 50px;
     justify-items: center; 
 }
 
+.description-grid > *:nth-child(1){
+	-ms-grid-row: 1;
+	-ms-grid-column: 1; 
+}
+
+.description-grid > *:nth-child(2){
+	-ms-grid-row: 1;
+	-ms-grid-column: 2; 
+}
+
+.description-grid > *:nth-child(3){
+	-ms-grid-row: 1;
+	-ms-grid-column: 3; 
+}
+
+.description-grid > *:nth-child(4){
+	-ms-grid-row: 2;
+	-ms-grid-column: 1; 
+}
+
+.description-grid > *:nth-child(5){
+	-ms-grid-row: 2;
+	-ms-grid-column: 2; 
+}
+
+.description-grid > *:nth-child(6){
+	-ms-grid-row: 2;
+	-ms-grid-column: 3; 
+}
+
+.description-grid > *:nth-child(7){
+	-ms-grid-row: 3;
+	-ms-grid-column: 1; 
+}
+
+.description-grid > *:nth-child(8){
+	-ms-grid-row: 3;
+	-ms-grid-column: 2; 
+}
+
+.description-grid > *:nth-child(9){
+	-ms-grid-row: 3;
+	-ms-grid-column: 3; 
+}
+
 .googlemap{
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 1fr 4fr 1fr;
     grid-template-columns: 1fr 4fr 1fr;
 }
 
@@ -184,9 +244,16 @@ body {
 
 .schools-wrap{
     margin: 3%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .carousel-wrap{
@@ -200,8 +267,12 @@ body {
 
 /*  Footer Section */
 .assoc-realtor-img{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 .assoc-realtor-img > img{
@@ -221,16 +292,29 @@ body {
 
 @media (max-width: 414px){
     .bio-sec-wrap{
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
 
     .description-grid{
+        -ms-grid-columns: 2fr;
         grid-template-columns: 2fr;
+        -ms-grid-rows: auto;
         grid-template-rows: auto;
     }
 
+    .description-grid > *:nth-child(1){
+		-ms-grid-row: 1;
+		-ms-grid-column: 1;
+    }
+
     .schools-wrap{
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
 
     .schools-wrap > div{
